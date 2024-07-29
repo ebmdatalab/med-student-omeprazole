@@ -1,0 +1,3 @@
+# Ignore runtime-generated config
+/lab
+/labconfig

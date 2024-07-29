@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# We want launcher shell scripts which can be directly executed from the file
+# manager GUI without requiring a terminal. On Windows this requires an
+# extension of ".sh", on macOS this requires either no extension or the
+# extension ".command". There's no way to jointly satisfy these requirements so
+# we need two launchers with different extensions, one of which just
+# immediately executes the other.
+
+# Unset CDPATH to prevent `cd` potentially behaving unexpectedly
+unset CDPATH
+cd "$( dirname "${BASH_SOURCE[0]}")"
+
+exec ./jupyter-lab.sh

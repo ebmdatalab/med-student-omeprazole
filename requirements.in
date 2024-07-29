@@ -1,0 +1,20 @@
+# Basic requirements for notebook infrastructure
+pip-tools
+jupyter
+jupyterlab
+jupytext
+bash_kernel
+
+# Commonly-used packages within the Bennett Institute
+pandas-gbq
+pandas
+numpy
+ebmdatalab
+matplotlib
+tqdm
+
+# Both these required for plotly+notebooks
+ipywidgets
+dash
+
+# Add extra per-notebook packages here

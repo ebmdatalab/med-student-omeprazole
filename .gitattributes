@@ -1,0 +1,3 @@
+# Don't allow windows checkouts to convert `\n` to `\r\n`, as this
+# breaks stuff that is meant to be run in linux-in-docker
+* text=auto eol=lf
